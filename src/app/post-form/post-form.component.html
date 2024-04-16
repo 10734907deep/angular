@@ -1,0 +1,12 @@
+<p>post-form works!</p>
+<form #postForm="ngForm" (ngSubmit)="onSubmit(postForm)">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" ngModel required>
+    </div>
+    <div>
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" ngModel required></textarea>
+    </div>
+    <button type="submit">Create Post</button>
+  </form>
