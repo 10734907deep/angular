@@ -1,0 +1,7 @@
+<form #commentForm="ngForm" (ngSubmit)="onSubmit(commentForm)">
+    <div>
+      <label for="content">Your Comment:</label>
+      <textarea id="content" name="content" ngModel required></textarea>
+    </div>
+    <button type="submit">Submit Comment</button>
+  </form>
